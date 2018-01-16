@@ -23,5 +23,13 @@ http://www.youtube.com/watch?v=fX7jbMpJGp8
 http://www.youtube.com/watch?v=UIvkFNaHEBw
 ```
 
+### Example with [youtube-dl](https://github.com/rg3/youtube-dl)
+
+To download last 10 videos in a playlist
+
+```shell
+python youParse.py https://www.youtube.com/watch\?v\=LsoLEjrDogU\&list\=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG | tail -n 10 | xargs -n1 youtube-dl
+```
+
 ## Requires
 YouParse requires Python 2.7 or greater.
